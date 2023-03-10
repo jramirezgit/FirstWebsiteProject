@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <!--in the method, we use GET for general information, use POST for private information-->
+    <form action = "action_page.php" method = "POST">
+        <div>
+            <label for = "title">title:</label>
+
+            <label>Mr.</label>
+            <input type = "radio" id = "Mr." name = "title" value = "Mr.">
+
+            <label>Mrs.</label>
+            <input type = "radio" id = "Mrs." name = "title" value = "Mrs.">
+
+            <label>PhD.</label>
+            <input type = "radio" id = "PhD." name = "title" value = "PhD.">
+        </div>
+        <br>
+        <div>
+            <label for = "fname">First name:</label>
+            <input type = "text" id = "fname" name = "fname" placeholder ="First" required>
+        </div>
+        <br>
+        <div>
+            <label for = "lname">Last name:</label>
+            <input type = "text" id = "lname" name = "lname" placeholder ="Last" required>
+        </div> 
+        <br>
+        <div>
+            <label for = "email"> Email:</label>
+            <input type = "email" id = "email" name = "email" required>
+        </div>
+        <br>
+        <div>
+            <label for = "pass">Password:</label>
+            <input type = "password" id = "pass" name = "pass" maxlength = "12" required>
+        </div>
+        <br>
+        <div>
+            <label for = "phone">Phone #:</label>
+            <input type = "tel" id = "phone" name = "phone" placeholder = "000-000-0000">
+        </div>
+        <br>
+        <div>
+            <label for = "bdate">Birthdate:</label>
+            <input type = "date" id = "bdate" name = "bdate">
+        </div>
+        <br>
+        <div>
+            <label for = "quantity">Quantity:</label>
+            <input type = "number" id = "quantity" name = "quantity" min = "0" max = "99" value = "1">
+        </div>
+        <br>
+        <div>
+            <label for = "payment">Payment:</label>
+            <select id = "payment" name = "payment">
+                <option value = "visa">Visa</option>
+                <option value = "mastercard">Mastercard</option>
+                <option value = "giftcard">Gift Card</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="tandc">Accept Terms & Conditions:</label>
+            <input type = "checkbox" id = "tandc" name = "tandc">
+        </div>
+        <br>
+        <div>
+            <input type = "reset">
+        </div>    
+        <br>
+        <div>
+            <input type = "submit">
+        </div>
+    </form>
+</body>
+</html>
